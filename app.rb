@@ -38,5 +38,9 @@ end
 
 
 get '/search' do
-    "Hello  " + params[:term]
+    if params[:term]
+      "Hello  " + params[:term]
+    else
+      "You need to provide <b>Term</b> to search."
+    end
 end
