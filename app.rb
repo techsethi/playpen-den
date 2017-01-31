@@ -1,5 +1,4 @@
 %w(sinatra).each  { |lib| require lib}
-require 'awesome_print'
 require 'digest/md5'
 require 'cgi'
 
