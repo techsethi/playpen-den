@@ -10,7 +10,7 @@ helpers do
 
   def protected!
     unless authorized?
-      response['WWW-Authenticate'] = %(Basic realm="Facebook login expired")
+      response['WWW-Authenticate'] = %(Basic realm="Facebook login expired, You need to login to facebook again")
       throw(:halt, [401, "Not authorized\n"])
     end
   end
